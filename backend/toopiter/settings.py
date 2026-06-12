@@ -51,7 +51,6 @@ INSTALLED_APPS = [
     'premium',
     'api',
     'core',
-    'media',
 ]
 
 MIDDLEWARE = [
