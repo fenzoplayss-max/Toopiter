@@ -1,41 +1,55 @@
 ```
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-build/
-develop-eggs/
+# Dependencies
+node_modules/
+
+# Build outputs
 dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
+build/
+*.js
+*.ts
+*.tsx
+*.css
 
-# Logs
-*.log
-toopiter/backend/logs/
-
-# Environment
+# Environment variables
 .env
 .env.local
 .env.*
-.venv/
-venv/
-ENV/
 
-# IDE
+# IDE files
 .vscode/
 .idea/
 *.swp
 *.swo
+*.tmp
+
+# Logs
+*.log
+
+# Coverage
+coverage/
+htmlcov/
+.coverage
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.nox/
+__pypackages__/
+
+# Vite specific
+!.vite/
+.vite/
+
+# TypeScript
+*.tsbuildinfo
 ```
