@@ -86,32 +86,13 @@ TEMPLATES = [
 WSGI_APPLICATION = 'toopiter.wsgi.application'
 ASGI_APPLICATION = 'toopiter.asgi.application'
 
-# Database
-# Check if using SQLite (for development without PostgreSQL)
-USE_SQLITE = os.environ.get('USE_SQLITE', 'False').lower() == 'true'
-
-if USE_SQLITE:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': BASE_DIR / 'db.sqlite3',
-        }
+# Database - Using SQLite for development
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
-else:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql',
-            'NAME': os.environ.get('POSTGRES_DB', 'toopiter'),
-            'USER': os.environ.get('POSTGRES_USER', 'toopiter'),
-            'PASSWORD': os.environ.get('POSTGRES_PASSWORD', 'toopiter_password'),
-            'HOST': os.environ.get('POSTGRES_HOST', 'localhost'),
-            'PORT': os.environ.get('POSTGRES_PORT', '5432'),
-            'CONN_MAX_AGE': 60,
-            'OPTIONS': {
-                'connect_timeout': 10,
-            },
-        }
-    }
+}
 
 # Redis cache
 # Use in-memory cache if Redis is not available
