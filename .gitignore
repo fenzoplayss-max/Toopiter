@@ -1,4 +1,3 @@
-```gitignore
 # Python
 __pycache__/
 *.py[cod]
@@ -21,46 +20,57 @@ wheels/
 .installed.cfg
 *.egg
 
-# Virtual environments
+# Environment
+.venv/
 venv/
 env/
 ENV/
-.venv/
-.env/
-
-# Django/Python web frameworks
-*.log
-local_settings.py
-db.sqlite3
-db.sqlite3-journal
 
 # IDE
 .vscode/
 .idea/
 *.swp
 *.swo
-*.tmp
 
-# OS
-.DS_Store
-Thumbs.db
-
-# Environment variables
-.env
-.env.local
-*.env.*
+# Logs
+*.log
 
 # Coverage
 .coverage
 coverage/
 htmlcov/
 
-# MyPy
+# Testing
+.pytest_cache/
 .mypy_cache/
-```
+.hypothesis/
 
-Wait, let me reconsider. The modified files are only Python source files and settings. There are no build artifacts, dependency directories, or temporary files in the changes provided. Following rule #6, I should output nothing since the changes contain only source/config files.
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
 
-```gitignore
+# System
+.DS_Store
+Thumbs.db
 
-```
+# Local configuration
+.env
+.env.local
+*.env.*
