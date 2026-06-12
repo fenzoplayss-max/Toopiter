@@ -1,0 +1,59 @@
+# Django and core
+Django==5.0.6
+djangorestframework==3.15.1
+djangorestframework-simplejwt==5.3.1
+django-cors-headers==4.3.1
+django-filter==24.2
+django-storages==1.14.3
+whitenoise==6.6.0
+
+# Database
+psycopg2-binary==2.9.9
+
+# Redis and caching
+redis==5.0.4
+channels==4.1.0
+channels-redis==4.2.0
+
+# Async support
+asyncio==3.4.3
+
+# Celery for background tasks
+celery==5.3.6
+
+# Image processing
+Pillow==10.3.0
+python-magic==0.4.27
+
+# Video processing
+ffmpeg-python==0.2.0
+
+# Text processing
+markdown==3.6
+bleach==6.1.0
+
+# API documentation
+drf-spectacular==0.27.2
+
+# Security
+PyJWT==2.8.0
+cryptography==42.0.7
+
+# Utilities
+python-dateutil==2.9.0
+pytz==2024.1
+requests==2.31.0
+
+# Development
+pytest==8.2.0
+pytest-django==4.8.0
+pytest-cov==5.0.0
+black==24.4.2
+flake8==7.0.0
+mypy==1.10.0
+
+# Monitoring
+sentry-sdk==2.3.1
+
+# Email
+django-anymail==10.3
